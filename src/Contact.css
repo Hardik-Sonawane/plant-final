@@ -1,0 +1,106 @@
+.contact {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 50px;
+  padding-top: 100px; /* Add extra padding at the top to prevent overlap with navbar */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/contact.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* White overlay for better text readability */
+  z-index: -1;
+}
+
+.contact h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.contact h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%);
+  border-radius: 2px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #48c6ef;
+  box-shadow: 0 0 0 2px rgba(72, 198, 239, 0.2);
+}
+
+.contact button {
+  background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(72, 198, 239, 0.3);
+}
+
+.contact button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(72, 198, 239, 0.4);
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 30px 15px;
+    padding-top: 80px;
+  }
+  
+  .contact form {
+    padding: 20px;
+  }
+}

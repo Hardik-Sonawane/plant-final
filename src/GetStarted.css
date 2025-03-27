@@ -1,0 +1,39 @@
+/* GetStarted.css */
+.get-started {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #48c6ef; /* Full-page background color */
+  color: white;
+  min-height: 100vh; /* Ensures it covers the full viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.get-started p {
+  margin: 20px 0;
+  font-size: 1.5em;
+}
+
+.get-started button {
+  background-color: #fff;
+  color: #6f86d6;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.get-started button:hover {
+  background-color: #6f86d6;
+  color: white;
+}

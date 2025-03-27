@@ -1,0 +1,148 @@
+/* General Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+/* App Container */
+.App {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Align content to the top */
+  align-items: stretch;
+  /* Stretch content to full width */
+  text-align: center;
+  padding-top: 70px; /* Add padding to account for fixed navbar */
+}
+
+.with-background {
+  /* Background image for specific pages */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  /* Ensure it covers the full viewport */
+  width: 100%;
+  /* Ensure it spans the full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-section {
+  margin: 20px;
+}
+
+.result {
+  margin-top: 20px;
+  color: green;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #2c3e50 !important; /* Darker color with !important to override Bootstrap */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  /* Space between left and right sections */
+  align-items: center;
+  width: 100%;
+  /* Ensure it spans the full width */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  /* Fix the navbar at the top */
+  top: 0;
+  z-index: 1000;
+  /* Ensure it stays above other content */
+  height: 70px; /* Fixed height for consistency */
+}
+
+.navbar-left .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  /* Space between links */
+}
+
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-right a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.home-page,
+.detect-page,
+.about-page,
+.contact-page,
+.getstarted-page {
+  min-height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page {
+  background-color: #f0f8ff;
+}
+
+.detect-page {
+  background-color: #e8f5e9;
+}
+
+.about-page {
+  background-color: #fff3e0;
+}
+
+.contact-page {
+  background-color: #ede7f6;
+}
+
+.getstarted-page {
+  background-color: #48c6ef;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
